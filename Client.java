@@ -17,12 +17,11 @@ public class Client {
     }
     
     public void handshake() {
-        this.writer.write("12345");
-        this.writer.println();
+        this.writer.println("12345");
     }
 
     public void disconnect() throws IOException {
-        this.reader.close(); 
+        this.reader.close();
         this.writer.close();
         this.clientSocket.close();
     }
@@ -31,12 +30,16 @@ public class Client {
         // this.writer.write(message);
         // this.writer.println();
         // String line = this.reader.readLine();
-        int num = Integer.parseInt(str);
-        int count = 0;
-        for(int i = 1; i <= num; i++)
-            if(num % i == 0) { count++; }
+        // int num = Integer.parseInt(str);
+        // int count = 0;
+        // for(int i = 1; i <= num; i++)
+        //     if(num % i == 0) { count++; }
 
-        return "The number " + num + " has " + count + " factors.\n";
+        // return "The number " + num + " has " + count + " factors.\n";
+
+        this.writer.println(str);
+
+        return this.reader.readLine();
     }
 
     public Socket getSocket() {
