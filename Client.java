@@ -2,11 +2,10 @@
 import java.net.*;
 // import java.time.*;
 import java.io.*;
+// import java.lang.*;
 
 public class Client {
 
-    String host;
-    int port;
     Socket clientSocket = null ;
     BufferedReader reader = null;
     PrintWriter writer = null;
@@ -28,15 +27,16 @@ public class Client {
         this.clientSocket.close();
     }
 
-    public String request(String string) throws IOException {
-        String message = string;
-        this.writer.write(message);
-        this.writer.println();
-        String line = "";
+    public String request(String str) throws IOException {
+        // this.writer.write(message);
+        // this.writer.println();
+        // String line = this.reader.readLine();
+        int num = Integer.parseInt(str);
+        int count = 0;
+        for(int i = 1; i <= num; i++)
+            if(num % i == 0) { count++; }
 
-        line = this.reader.readLine();
-
-        return line ;
+        return "The number " + num + " has " + count + " factors.\n";
     }
 
     public Socket getSocket() {
