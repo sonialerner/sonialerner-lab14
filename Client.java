@@ -1,8 +1,5 @@
-// import java.util.*;
 import java.net.*;
-// import java.time.*;
 import java.io.*;
-// import java.lang.*;
 
 public class Client {
 
@@ -17,7 +14,7 @@ public class Client {
     }
     
     public void handshake() {
-        this.writer.println("12345");
+        this.writer.println("12345"); // send password to server
     }
 
     public void disconnect() throws IOException {
@@ -27,19 +24,8 @@ public class Client {
     }
 
     public String request(String str) throws IOException {
-        // this.writer.write(message);
-        // this.writer.println();
-        // String line = this.reader.readLine();
-        // int num = Integer.parseInt(str);
-        // int count = 0;
-        // for(int i = 1; i <= num; i++)
-        //     if(num % i == 0) { count++; }
-
-        // return "The number " + num + " has " + count + " factors.\n";
-
-        this.writer.println(str);
-
-        return this.reader.readLine();
+        this.writer.println(str); // send number to server
+        return this.reader.readLine(); // return what server sends back
     }
 
     public Socket getSocket() {
