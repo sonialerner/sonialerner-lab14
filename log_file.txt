@@ -1,0 +1,29 @@
+commit f8da30da0c4a877e5a699d6d4208cda0928ee736
+Author: Sonia Lerner <sonialerner05@gmail.com>
+Date:   Mon Nov 17 00:53:30 2025 -0500
+
+    passing first test case
+
+commit fff95221194000aeb6806801c08b408bc4a6a551
+Author: Sonia Lerner <sonialerner05@gmail.com>
+Date:   Sun Nov 16 23:54:08 2025 -0500
+
+    all methods roughly drafted
+
+commit 8bdad51b49564ecbbdd87e68c56dacda4f1d3571
+Author: Sonia Lerner <sonialerner05@gmail.com>
+Date:   Sat Nov 15 18:59:32 2025 -0500
+
+    committing class files
+
+commit 1acb3a4ed2456a5e363cd33dd5d1f9bd8e3139fa
+Author: Sonia Lerner <sonialerner05@gmail.com>
+Date:   Sat Nov 15 18:57:35 2025 -0500
+
+    added junit
+
+commit 99546440b48fb4ebb0d19da6b2912135c90ff002
+Author: Sonia Lerner <sonialerner05@gmail.com>
+Date:   Sat Nov 15 18:13:24 2025 -0500
+
+    downloaded and created files
